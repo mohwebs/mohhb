@@ -1,0 +1,11 @@
+<script src="{{asset('hbhome/script/jquery.js')}}"></script>
+<script src="{{asset('hbhome/script/bootstrap.js')}}"></script>
+<script src="{{asset('hbhome/script/slick-slider.js')}}"></script>
+<script src="{{asset('hbhome/plugin-script/counter.js')}}"></script>
+<script src="{{asset('hbhome/plugin-script/fancybox.pack.js')}}"></script>
+<script src="{{asset('hbhome/plugin-script/isotope.min.js')}}"></script>
+<script src="{{asset('hbome/plugin-script/progressbar.js')}}"></script>
+<script src="{{asset('hbhome/script/google-map.js')}}"></script>
+<script src="{{asset('hbhome/build/mediaelement-and-player.js')}}"></script>
+<script src="{{asset('hbhome/plugin-script/functions.js')}}"></script>
+<script src="{{asset('hbhome/script/functions.js')}}"></script>
