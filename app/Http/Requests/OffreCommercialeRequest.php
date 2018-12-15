@@ -13,7 +13,7 @@ class OffreCommercialeRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,12 @@ class OffreCommercialeRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'titre' => 'required|string|max:255',
+
+
+            'description' => 'required|string|',
+
+
         ];
     }
 }

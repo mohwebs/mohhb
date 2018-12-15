@@ -71,7 +71,7 @@
                                         </li>
                                         <li class="careerfy-column-6">
                                             <label>SiteWeb</label>
-                                            <input value="{{Auth::user()->site}}" onblur="if(this.value == '') { this.value ='{{Auth::user()->site}}'; }" onfocus="if(this.value =='{{Auth::user()->site}}') { this.value = ''; }" type="text" name="siteweb"
+                                            <input value="{{Auth::user()->siteweb}}" onblur="if(this.value == '') { this.value ='{{Auth::user()->site}}'; }" onfocus="if(this.value =='{{Auth::user()->siteweb}}') { this.value = ''; }" type="text" name="siteweb"
                                                    class="form-control{{ $errors->has('siteweb') ? ' is-invalid' : '' }}">
                                             @if ($errors->has('siteweb'))
                                                 <span class="invalid-feedback" role="alert">
@@ -511,11 +511,11 @@
                                         </li>
                                         <li class="careerfy-column-6">
                                             <label>Linkedin</label>
-                                            <input value="{{Auth::user()->linkdin}}" onblur="if(this.value == '') { this.value ='{{Auth::user()->linkdin}}'; }" onfocus="if(this.value =='{{Auth::user()->linkdin}}') { this.value = ''; }" type="text"
-                                                   name="linkdin" class="form-control{{ $errors->has('linkdin') ? ' is-invalid' : '' }}">
-                                            @if ($errors->has('linkdin'))
+                                            <input value="{{Auth::user()->linkedin}}" onblur="if(this.value == '') { this.value ='{{Auth::user()->linkedin}}'; }" onfocus="if(this.value =='{{Auth::user()->linkedin}}') { this.value = ''; }" type="text"
+                                                   name="linkedin" class="form-control{{ $errors->has('linkedin') ? ' is-invalid' : '' }}">
+                                            @if ($errors->has('linkedin'))
                                                 <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('linkdin') }}</strong>
+                                        <strong>{{ $errors->first('linkedin') }}</strong>
                                     </span>
                                             @endif
                                         </li>

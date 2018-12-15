@@ -16,7 +16,9 @@ class CreateOffreCommercialesTable extends Migration
         Schema::create('offre_commerciales', function (Blueprint $table) {
             $table->increments('id');
             $table->string('titre');
-            $table->string('description');
+            $table->string('slug');
+            $table->text('description');
+            $table->string('produit');
 
             $table->timestamps();
 

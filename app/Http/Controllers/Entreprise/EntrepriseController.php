@@ -60,8 +60,9 @@ class EntrepriseController extends Controller
         $entreprise->facebook = $request->input('facebook');
         $entreprise->twitter = $request->input('twitter');
         $entreprise->youtube = $request->input('youtube');
-        $entreprise->linkedin = $request->input('linkdin');
+        $entreprise->linkedin = $request->input('linkedin');
         $entreprise->instagram = $request->input('instagram');
+        $entreprise->googleplus = $request->input('googleplus');
         $entreprise->siteweb = $request->input('siteweb');
 
 

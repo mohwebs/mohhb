@@ -29,7 +29,7 @@ class Entreprise extends Authenticatable
 
 
 
-    public function carrieres()
+    public function offre_commerciales()
     {
         return $this->hasMany('App\OffreCommerciale');
     }

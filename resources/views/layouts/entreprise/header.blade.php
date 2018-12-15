@@ -50,18 +50,21 @@
                     </ul>
                 </div>
             </nav>
-            @auth
+
+                 @auth('entreprise')
                 <ul class="careerfy-user-option">
                     <li><a href="{{url('entreprise/logout')}}" class="careerfy-post-btn "><i class="careerfy-icon careerfy-arrows-2"></i> Se deconnecter</a></li>
                     <li><a href="#" class="careerfy-btn-icon "><i class="careerfy-icon careerfy-social-1"></i>
                          </a></li>
                 </ul>
-                @elseauth()
+            @endauth
+
+            @guest('entreprise')
                 <ul class="careerfy-user-option">
                     <li><a href="#" class="careerfy-post-btn careerfy-open-signin-tab"><i class="careerfy-icon careerfy-arrows-2"></i> S'incrire</a></li>
                     <li><a href="#" class="careerfy-btn-icon careerfy-open-signup-tab"><i class="careerfy-icon careerfy-social-1"></i></a></li>
                 </ul>
-                @endauth
+                @endguest
 
 
 

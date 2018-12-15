@@ -3,7 +3,7 @@
 
 @endphp
 
-<div class="careerfy-modal " id="JobSearchModalLogin">
+<div class="careerfy-modal fade careerfy-typo-wrap " id="JobSearchModalLogin">
     <div class="modal-inner-area">&nbsp;</div>
     <div class="modal-content-area">
         <div class="modal-box-area">
