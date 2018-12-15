@@ -26,7 +26,7 @@ class RedirectIfAuthenticated
 
             case 'entreprise':
                 if (Auth::guard($guard)->check()) {
-                    return redirect()->route('ent');
+                    return redirect()->route('entreprise');
                 }
                 break;
 

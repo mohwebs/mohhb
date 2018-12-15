@@ -30,12 +30,12 @@
                     <ul>
                         <li>
                             <label>Email Address:</label>
-                            <input value="Enter Your Email Address" onblur="if(this.value == '') { this.value ='Enter Your Email Address'; }" onfocus="if(this.value =='Enter Your Email Address') { this.value = ''; }" type="text">
+                            <input value="Enter Your Email Address" onblur="if(this.value == '') { this.value ='Enter Your Email Address'; }" onfocus="if(this.value =='Enter Your Email Address') { this.value = ''; }" type="text" name="email">
                             <i class="careerfy-icon careerfy-mail"></i>
                         </li>
                         <li>
                             <label>Password:</label>
-                            <input value="Enter Password" onblur="if(this.value == '') { this.value ='Enter Password'; }" onfocus="if(this.value =='Enter Password') { this.value = ''; }" type="text">
+                            <input value="Enter Password" onblur="if(this.value == '') { this.value ='Enter Password'; }" onfocus="if(this.value =='Enter Password') { this.value = ''; }" type="text" name="password">
                             <i class="careerfy-icon careerfy-multimedia"></i>
                         </li>
                         <li>

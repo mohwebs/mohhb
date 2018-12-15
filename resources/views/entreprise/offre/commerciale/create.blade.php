@@ -15,7 +15,10 @@
                 <div class="careerfy-column-9">
                     <div class="careerfy-typo-wrap">
                         <div class="careerfy-employer-dasboard">
-                            <form>
+                            <form name="form" class="careerfy-employer-dasboard"  action="{{url('entreprise/'.Auth::user()->slug.'/offre/commerciales')}}" method="post" enctype="multipart/form-data">
+
+
+                                {{ csrf_field() }}
                                 <div class="careerfy-employer-box-section">
                                     <!-- Profile Title -->
                                     <div class="careerfy-profile-title">
@@ -30,25 +33,14 @@
 
                                         <li class="careerfy-column-12">
                                             <label>Description *</label>
-                                            <textarea>Nulla bibendum commodo rhoncus. Sed mattis magna nunc, ac varius quam pharetra vitae. Praesent vitae ipsum eu magna pretium aliquam. Curabitur interdum quis velit non tincidunt. Donec pretium gravida erat, a faucibus velit egestas eget. Nulla bibendum commodo rhoncus. Sed mattis magna nunc, ac varius quam itae ipsum eu magna pretium aliquam. Curabitur interdum quis velit non tincidunt. Donec pretium gravida erat, a faucibus velit egestas eget.</textarea>
+                                            <textarea name="description">Nulla bibendum commodo rhoncus. Sed mattis magna nunc, ac varius quam pharetra vitae. Praesent vitae ipsum eu magna pretium aliquam. Curabitur interdum quis velit non tincidunt. Donec pretium gravida erat, a faucibus velit egestas eget. Nulla bibendum commodo rhoncus. Sed mattis magna nunc, ac varius quam itae ipsum eu magna pretium aliquam. Curabitur interdum quis velit non tincidunt. Donec pretium gravida erat, a faucibus velit egestas eget.</textarea>
                                         </li>
                                         <li class="careerfy-column-6">
                                             <label>Service / Produit</label>
-                                            <input value="" onblur="if(this.value == '') { this.value =''; }" onfocus="if(this.value =='') { this.value = ''; }" type="text">
+                                            <input name="produit" value="" onblur="if(this.value == '') { this.value =''; }" onfocus="if(this.value =='') { this.value = ''; }" type="text">
                                         </li>
-                                        <li class="careerfy-column-6">
-                                            <label>Username</label>
-                                            <input value="Graveholdings" onblur="if(this.value == '') { this.value ='Graveholdings'; }" onfocus="if(this.value =='Graveholdings') { this.value = ''; }" type="text">
-                                        </li>
-                                        <li class="careerfy-column-6">
-                                            <label>Job Category *</label>
-                                            <div class="careerfy-profile-select">
-                                                <select>
-                                                    <option>Select a Category</option>
-                                                    <option>Select a Category</option>
-                                                </select>
-                                            </div>
-                                        </li>
+
+
 
                                     </ul>
                                 </div>

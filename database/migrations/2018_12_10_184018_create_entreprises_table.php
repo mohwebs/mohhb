@@ -19,7 +19,7 @@ class CreateEntreprisesTable extends Migration
             $table->string('slug')->unique();
             $table->string('email');
             $table->string('password');
-            $table->string('description')->nullable();
+            $table->text('description')->nullable();
             $table->string('datefoundation')->nullable();
             $table->integer('tel')->nullable();
             $table->string('siteweb')->nullable();

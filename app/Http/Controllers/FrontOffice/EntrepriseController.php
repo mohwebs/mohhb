@@ -5,11 +5,11 @@ namespace App\Http\Controllers\FrontOffice;
 use App\Entreprise;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Auth;
-
+use Illuminate\Support\Facades\Auth;
 
 class EntrepriseController extends Controller
 {
+
 
 
     public function indexgrid()
@@ -35,7 +35,7 @@ class EntrepriseController extends Controller
     public function show($slug)
 
     {
-        $entreprise = Entreprise::find($slug);
+        $entreprise = Entreprise::where('slug',$slug)->first();
 
         return view('entreprise.show',['entreprise' => $entreprise]);
 

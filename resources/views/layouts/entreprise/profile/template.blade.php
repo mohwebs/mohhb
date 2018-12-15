@@ -16,7 +16,7 @@
 <div class="careerfy-wrapper">
 
     <!-- Header -->
-@include('layouts.entreprise.header')
+@include('layouts.frontoffice.header1')
 <!-- Header -->
 
     <!-- SubHeader -->

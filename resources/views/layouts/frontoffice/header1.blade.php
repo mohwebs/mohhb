@@ -1,7 +1,7 @@
 <header id="careerfy-header" class="careerfy-header-one">
     <div class="container">
         <div class="row">
-            <aside class="col-md-2"> <a href="index.html" class="careerfy-logo"><img src="images/logo.png" alt=""></a> </aside>
+            <aside class="col-md-2"> <a href="index.html" class="careerfy-logo"><img src="{{asset('hbhome/images/logo.png')}}" alt=""></a> </aside>
             <aside class="col-md-6">
                 <nav class="careerfy-navigation">
                     <div class="navbar-header">
@@ -57,7 +57,7 @@
                     @auth('entreprise')
                         <ul class="careerfy-user-option">
                             <li><a href="{{url('entreprise/logout')}}" class="careerfy-post-btn "><i class="careerfy-icon careerfy-arrows-2"></i> Se deconnecter</a></li>
-                            <li><a href="#" class="careerfy-btn-icon "><i class="careerfy-icon careerfy-social-1"></i>
+                            <li><a href="{{url('entreprise/'.Auth::user()->slug.'/edit')}}" class="careerfy-btn-icon "><i class="careerfy-icon careerfy-social-1"></i>
                                 </a></li>
                         </ul>
                     @endauth
